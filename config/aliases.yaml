@@ -2,25 +2,27 @@
 # Format: namespace → entity → canonical feature + aliases
 # Add entries as new agents, projects, and motifs are introduced.
 
+# Replace these examples with your agent's real aliases.
+# Each entry maps raw extracted strings to a stable canonical feature.
+
 agents:
-  phosphor:
-    canonical: agent:phosphor
+  collaborator_a:
+    canonical: agent:collaborator_a
     aliases:
-      - Phosphor
-      - phosphor
-      - P
-  sam:
-    canonical: agent:sam
+      - Collaborator A
+      - collaborator_a
+      - CA
+  user:
+    canonical: agent:user
     aliases:
-      - Sam
-      - sam
-      - S
-  adm:
-    canonical: agent:adm
+      - User
+      - user
+      - the user
+  external_agent:
+    canonical: agent:external_agent
     aliases:
-      - ADM
-      - adm
-      - Astral Dream Machine
+      - External Agent
+      - external_agent
 
 projects:
   phase1:
@@ -45,18 +47,11 @@ motifs:
       - public transmission
       - emission
       - transmit
-  laminator:
-    canonical: motif:laminator
+  example_motif:
+    canonical: motif:example_motif
     aliases:
-      - laminator
-      - laminates
-      - the laminator
-  apple:
-    canonical: motif:golden_apple
-    aliases:
-      - golden apple
-      - the apple
-      - KALLISTI
+      - example motif
+      - the example
 
 drives:
   completion: drive:completion

@@ -3,7 +3,8 @@
 # Full role-topology extraction is a Phase 2 concern.
 # Phase 1 uses these anchors for identity coherence diagnostics only.
 
-role_file: data/role/SOUL.md
+# Replace with the path to your agent's role file.
+role_file: data/role/role.md
 
 # Chunking strategy for embedding
 chunk_size: 300  # tokens per chunk
