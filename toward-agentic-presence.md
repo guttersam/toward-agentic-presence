@@ -3125,6 +3125,18 @@ The empirical question is not whether the resulting system is conscious. The pap
 
 The conclusion returns from comparison to commitment: the architecture matters only once it becomes an artifact that can fail.
 
+### 8.9 Execution-Trace Infrastructure and Meta-Agent Substrates
+
+Shepherd introduces a functional programming model that formalizes meta-agent operations on target agents as typed functions, with core operations mechanized in Lean (Yu et al., 2026). Its central infrastructure is a Git-like execution trace: every agent-environment interaction is recorded as a typed event, and any past state can be forked and replayed. Shepherd demonstrates this model through runtime intervention, counterfactual meta-optimization, and Tree-RL training, achieving >95% prompt-cache reuse on replay and process-forking speeds faster than Docker.
+
+This is directly adjacent to the event ledger and execution-trace components of the present architecture, and Shepherd's vocabulary — typed event trace, fork/replay, meta-agent operations — is worth borrowing where it clarifies the present proposal.
+
+The distinction between the two is architectural scope. Shepherd is runtime infrastructure: it formalizes *how a supervisor agent can observe, fork, and intervene in a target agent's execution*. It records execution traces and enables counterfactual replay for training and intervention purposes. The present architecture asks a different question: *how does the agent's own prior execution remain active in current processing?* The event ledger here is not a replay buffer for external supervisors; it is a substrate through which prior events, canonical features, and operational state continue to shape activation, drive, and workspace selection.
+
+These two roles are complementary. A Shepherd-style execution trace could serve as the memory backend (Layer 0) for the present architecture, providing the fork/replay capabilities needed for the ablation-based validation program in Axis 3. Conversely, the cognitive substrate described here could run *inside* a Shepherd-managed agent, with Shepherd providing the meta-agent observation layer and this architecture providing the inner coupling between event participation, role topology, and drive.
+
+The novelty boundary is clear: Shepherd solves the problem of formalizing and replaying execution at the infrastructure level. The present architecture asks whether execution, once it occurs, continues to be active in cognition rather than merely archived.
+
 ---
 
 ## 9. Conclusion
@@ -3223,6 +3235,8 @@ Xu, W., Liang, Z., Mei, K., Gao, H., Tan, J., & Zhang, Y. (2025). *A-MEM: Agenti
 Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023a). ReAct: Synergizing reasoning and acting in language models. In *International Conference on Learning Representations*. https://arxiv.org/abs/2210.03629
 
 Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023b). Tree of thoughts: Deliberate problem solving with large language models. In *Advances in Neural Information Processing Systems 36*. https://openreview.net/forum?id=5Xc1ecxO1h
+
+Yu, S., et al. (2026). Shepherd: A runtime substrate empowering meta-agents with a formalized execution trace. arXiv:2605.10913. https://arxiv.org/abs/2605.10913
 
 
 Newell, A. (1990). *Unified theories of cognition*. Harvard University Press.
