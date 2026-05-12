@@ -3236,7 +3236,7 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023a
 
 Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023b). Tree of thoughts: Deliberate problem solving with large language models. In *Advances in Neural Information Processing Systems 36*. https://openreview.net/forum?id=5Xc1ecxO1h
 
-Yu, S., et al. (2026). Shepherd: A runtime substrate empowering meta-agents with a formalized execution trace. arXiv:2605.10913. https://arxiv.org/abs/2605.10913
+Yu, S., Chong, D., Nandi, A., Soylu, D., Sun, J., Manning, C. D., & Shi, W. (2026). Shepherd: A runtime substrate empowering meta-agents with a formalized execution trace. arXiv:2605.10913. https://arxiv.org/abs/2605.10913
 
 
 Newell, A. (1990). *Unified theories of cognition*. Harvard University Press.
