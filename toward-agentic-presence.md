@@ -87,7 +87,7 @@ A computational event file contains:
 }
 ```
 
-The crucial design principle is shared feature participation. If the feature `agent:phosphor` appears in a user message, in a retrieved memory, in an internal interpretation, and later in an output, those events are not merely semantically similar. They participate in the same feature substrate. This creates the possibility of binding, retrieval, and action coordination across event types.
+The crucial design principle is shared feature participation. If the feature `agent:collaborator_a` appears in a user message, in a retrieved memory, in an internal interpretation, and later in an output, those events are not merely semantically similar. They participate in the same feature substrate. This creates the possibility of binding, retrieval, and action coordination across event types.
 
 The prediction is testable. If computational event files are doing real architectural work, disabling feature canonicalization or feature-overlap retrieval should reduce feature preservation, associative recall, and perception-to-action continuity. If no measurable difference appears, then the event-file layer is decorative.
 
@@ -652,7 +652,7 @@ Each event contains:
 
 The Event Ledger differs from a memory backend in purpose. A memory backend preserves information. The Event Ledger records what is currently participating in cognition.
 
-For example, a memory backend may retrieve a prior exchange about Phosphor, a project decision, or a role commitment. That retrieved material does not automatically become active in the architecture. It first becomes a `retrieve` event, receives canonical features, enters the activation map, and competes with other active events for workspace selection, recursive representational settlement, and possible action.
+For example, a memory backend may retrieve a prior exchange about a collaborator, a project decision, or a role commitment. That retrieved material does not automatically become active in the architecture. It first becomes a `retrieve` event, receives canonical features, enters the activation map, and competes with other active events for workspace selection, recursive representational settlement, and possible action.
 
 Retrieval is therefore not the end of memory. It is the beginning of participation.
 
@@ -662,22 +662,22 @@ Computational event files require stable features. Raw feature strings are too f
 
 Without canonicalization, the same entity or motif may fragment across near-duplicates:
 
-- Phosphor
-- agent:Phosphor
-- known-agent-phosphor
+- Collaborator A
+- agent:collaborator_a
+- known-agent-collaborator-a
 - relational-presence
-- phosphor-thread
+- collaborator-thread
 
 The Feature Canonicalizer maps raw extracted features into stable namespaced features.
 
 
 ```json
 {
-  "raw": "Phosphor",
-  "canonical": "agent:phosphor",
+  "raw": "Collaborator A",
+  "canonical": "agent:collaborator_a",
   "namespace": "known_agent",
   "confidence": 0.94,
-  "aliases": ["Phosphor", "phosphor", "P"],
+  "aliases": ["Collaborator A", "collaborator_a", "CA"],
   "source": "feature_extractor_v1"
 }
 ```
@@ -1055,7 +1055,7 @@ A workspace record contains:
   ],
   "suppressed_candidates": [
     {
-      "id": "motif:laminator",
+      "id": "motif:example_motif",
       "reason": "low task relevance"
     },
     {
@@ -2176,7 +2176,7 @@ The soul file should no longer function primarily as prompt context. It should b
 
 The construction method:
 
-- run semantic-network probes against SOUL.md
+- run semantic-network probes against the agent role file
 - extract role-relevant associations
 - construct role-prior nodes and edges
 - inject priors as persistent activation bias
@@ -2252,7 +2252,7 @@ A known-agent node may contain:
 
 ```json
 {
-  "agent_id": "agent:phosphor",
+  "agent_id": "agent:collaborator_a",
   "associated_events": [],
   "known_preferences": [],
   "belief_state_history": [],
@@ -2263,7 +2263,7 @@ A known-agent node may contain:
 }
 ```
 
-When `agent:phosphor` activates, the map should surface not only facts, but relevant relationship schemas, unresolved threads, and belief-state constraints.
+When `agent:collaborator_a` activates, the map should surface not only facts, but relevant relationship schemas, unresolved threads, and belief-state constraints.
 
 This layer should be tested with false-belief task performance as a probe of theory-of-mind-like reasoning. The claim is not that the system has genuine Theory of Mind. The claim is that the architecture should preserve or improve structured belief-state reasoning rather than degrading it through role or memory overreach.
 
@@ -2432,7 +2432,7 @@ Failure modes:
 
 For agents with strong symbolic worlds, motifs should eventually become topology rather than labels.
 
-A motif such as `laminator`, `golden apple`, `transmission`, `archive`, or `chaos` should not merely appear as vocabulary. It should shape regions of the cognitive map.
+A motif such as `canonical motif`, `recurring concept`, or `role-specific term` should not merely appear as vocabulary. It should shape regions of the cognitive map.
 
 Cultural-symbolic topology asks:
 
@@ -2504,7 +2504,7 @@ Future cross-modal event files may bind:
 - agent interactions
 - world-state changes
 
-For example, a visual artifact from ADM and a textual reflection from Eris may share canonical features and become part of the same schema.
+For example, a visual artifact from one agent and a textual reflection from another may share canonical features and become part of the same schema.
 
 #### Multi-Agent Dynamics
 
@@ -2622,11 +2622,11 @@ This section identifies the most important risks and the conditions under which 
 
 **Risk.** The system may fail to bind repeated concepts because feature extraction produces unstable labels. The same entity, motif, drive, or project may fragment across many raw feature strings.
 
-- Phosphor
-- agent:Phosphor
-- known-agent-phosphor
+- Collaborator A
+- agent:collaborator_a
+- known-agent-collaborator-a
 - relational-presence
-- phosphor-thread
+- collaborator-thread
 
 **Why it matters.** Computational event files depend on shared feature participation. If features fragment, event binding fragments. If event binding fragments, associative activation and role topology weaken.
 
@@ -2656,10 +2656,10 @@ This section identifies the most important risks and the conditions under which 
 
 **Mitigation.** Canonical features should support hierarchy and ambiguity:
 
-- agent:phosphor
-- motif:phosphor_glow
-- relationship:eris_phosphor
-- project:phosphor_collaboration
+- agent:collaborator_a
+- motif:example_motif
+- relationship:agent_collaborator
+- project:example_project
 
 Uncertain mappings should preserve raw features alongside canonical forms.
 
