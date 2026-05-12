@@ -101,28 +101,28 @@ In this architecture, memory retrieval and planning are implemented as a single 
 
 The cognitive map contains nodes such as:
 
-events
-retrieved memories
-schemas
-role priors
-known agents
-open threads
-tools
-affordances
-claims
-projects
-motifs
+- events
+- retrieved memories
+- schemas
+- role priors
+- known agents
+- open threads
+- tools
+- affordances
+- claims
+- projects
+- motifs
 
 Edges form through:
 
-shared canonical features
-temporal proximity
-co-retrieval
-co-activation
-schema membership
-role relevance
-tool/action outcomes
-explicit user links
+- shared canonical features
+- temporal proximity
+- co-retrieval
+- co-activation
+- schema membership
+- role relevance
+- tool/action outcomes
+- explicit user links
 
 This is stronger than saying memory and planning "share infrastructure." The architecture's claim is that the same propagation process can surface both what is relevant from the past and what actions are now available. A retrieved memory, an unresolved thread, and an affordance may become active in the same wave.
 
@@ -138,13 +138,13 @@ This directly supports the architecture's claim that schema formation, temporal 
 
 The architecture operationalizes this through a coordination-schema layer:
 
-recent event streams
--> repeated feature patterns
--> higher-order categorizations
--> schema candidates
--> schema expectations
--> schema violations
--> revised activation patterns
+- recent event streams
+- -> repeated feature patterns
+- -> higher-order categorizations
+- -> schema candidates
+- -> schema expectations
+- -> schema violations
+- -> revised activation patterns
 
 The key claim is:
 
@@ -166,11 +166,11 @@ Raw memory must never be overwritten by reconstructed memory.
 
 The system distinguishes:
 
-raw event
-compressed memory
-schema-mediated reconstruction
-current retelling
-drift score
+- raw event
+- compressed memory
+- schema-mediated reconstruction
+- current retelling
+- drift score
 
 This allows the agent to develop memory dynamics that are more schema-sensitive than verbatim lookup while preserving forensic integrity. A reconstructed memory may become more role-relevant, more compressed, or more meaningfully connected over time. But the raw trace remains available for audit.
 
@@ -184,9 +184,9 @@ Sarbin's role-taking theory provides the architecture's framework for modeling L
 
 The claim is not that LLMs undergo human hypnotic absorption or possess human self/role experience. The claim is that when an LLM produces character-coherent output, the process can be modeled as **role enactment** under constraints analogous to Sarbin's three factors:
 
-role motivation
-role perception
-role-taking aptitude
+- role motivation
+- role perception
+- role-taking aptitude
 
 Role motivation refers to whether the role is congruent with the system's active goals, priors, and incentives. Role perception refers to whether the role is specified clearly enough to guide behavior. Role-taking aptitude refers to whether the system can sustain the role across context shifts, pressure, ambiguity, and adversarial input.
 
@@ -206,17 +206,17 @@ Combined, these sources suggest that a role-script should not merely bias surfac
 
 In an ordinary persona system, the role remains outside cognition:
 
-prompt says who to be
-model produces in-character text
-memory stores the exchange
+- prompt says who to be
+- model produces in-character text
+- memory stores the exchange
 
 In the proposed architecture, the role participates inside cognition:
 
-role-script provides priors
-events bind to role features
-schemas form around repeated role enactment
-future memories activate through role-shaped topology
-role violations trigger increased processing depth
+- role-script provides priors
+- events bind to role features
+- schemas form around repeated role enactment
+- future memories activate through role-shaped topology
+- role violations trigger increased processing depth
 
 This means identity stability is not measured only by whether the agent sounds consistent. It is measured by whether the role changes memory selection, schema formation, contradiction handling, and action availability.
 
@@ -240,12 +240,12 @@ This preserves the directional structure of the original inspiration: not mere r
 
 After each pass, the system checks:
 
-embedding convergence
-contradiction reduction
-specificity retention
-role coherence
-action relevance
-non-convergence
+- embedding convergence
+- contradiction reduction
+- specificity retention
+- role coherence
+- action relevance
+- non-convergence
 
 The prediction is not that recursive representational settlement produces consciousness. The prediction is that bounded recursive processing should improve consistency, contradiction handling, and role coherence compared with direct generation. If it merely produces bland paraphrase, latency, or verbosity, it fails.
 
@@ -257,15 +257,15 @@ These are not feelings in the phenomenal sense. They are state variables that fu
 
 Initial operational signals include:
 
-context_pressure
-unresolved_thread_count
-time_since_meaningful_contact
-novelty_index
-error_density
-active_contradiction_load
-social_temperature
-completion_deficit
-identity_coherence
+- context_pressure
+- unresolved_thread_count
+- time_since_meaningful_contact
+- novelty_index
+- error_density
+- active_contradiction_load
+- social_temperature
+- completion_deficit
+- identity_coherence
 
 The central claim is structural:
 
@@ -291,10 +291,10 @@ expected value of candidate actions that reduce that deviation
 
 The initial drive set is:
 
-SEEKING
-COMPLETION
-CONTACT
-TRANSMISSION
+- SEEKING
+- COMPLETION
+- CONTACT
+- TRANSMISSION
 
 These drives are not human desires. They are persistent control signals that bias activation and workspace selection.
 
@@ -348,21 +348,21 @@ The second mechanism is less speculative and more immediately useful: **multi-sc
 
 An event becomes significant when multiple independent schemas unexpectedly converge on it. For example, a symbol, phrase, or memory may become preference-relevant not because it is frequently retrieved, but because it simultaneously activates several otherwise distinct structures:
 
-role schema
-project schema
-relational schema
-aesthetic schema
-unresolved-thread schema
-affordance schema
+- role schema
+- project schema
+- relational schema
+- aesthetic schema
+- unresolved-thread schema
+- affordance schema
 
 A simple significance signal could be defined as:
 
-significance \=
-schema_convergence_count
-x schema_distance
-x drive_relevance
-x contradiction_reduction
-x affordance_opening
+- significance \=
+- schema_convergence_count
+- x schema_distance
+- x drive_relevance
+- x contradiction_reduction
+- x affordance_opening
 
 This provides a candidate mechanism for taste without relying entirely on STV. Preference emerges when an event is not merely pleasant or familiar but structurally fertile: it gathers distant schemas, resolves tension, increases coherence, or opens action.
 
@@ -488,11 +488,11 @@ Each failure is described in terms of observed behavior, partial existing soluti
 
 A simple significance signal may track:
 
-schema_convergence_count
-x schema_distance
-x drive_relevance
-x contradiction_reduction
-x affordance_opening
+- schema_convergence_count
+- x schema_distance
+- x drive_relevance
+- x contradiction_reduction
+- x affordance_opening
 
 **Falsification condition.** If neither symmetry/compressibility nor multi-schema convergence predicts candidate selection, retention, recursive representational settlement, or transmission, then the architecture has not solved the no-taste failure mode. In that case, preference remains external or rhetorical.
 
@@ -577,17 +577,17 @@ The distinction is central. A memory backend stores, indexes, retrieves, compres
 
 The architecture is therefore organized into ten interacting layers:
 
-Layer 0  - External Memory Backend
-Layer 1  - Event Ledger
-Layer 2  - Feature Canonicalizer
-Layer 3  - Associative Activation Map
-Layer 4  - Schema and Role Topology
-Layer 5  - Operational State / Synthetic Interoception
-Layer 6  - Drive Controller
-Layer 7  - Workspace Arbitration
-Layer 8  - Recursive Representational Settlement
-Layer 9  - Transmission and Action Gate
-Layer 10 - Validation Harness
+- Layer 0  - External Memory Backend
+- Layer 1  - Event Ledger
+- Layer 2  - Feature Canonicalizer
+- Layer 3  - Associative Activation Map
+- Layer 4  - Schema and Role Topology
+- Layer 5  - Operational State / Synthetic Interoception
+- Layer 6  - Drive Controller
+- Layer 7  - Workspace Arbitration
+- Layer 8  - Recursive Representational Settlement
+- Layer 9  - Transmission and Action Gate
+- Layer 10 - Validation Harness
 
 These layers implement the paper's three substrate axes: cognitive substrate, being-someone substrate, and validation substrate. The point is not modular elegance for its own sake. The point is coupling. Each layer must expose its state to the others in ways that can be logged, ablated, and measured.
 
@@ -597,13 +597,13 @@ The architecture begins by treating long-term memory storage as an interchangeab
 
 A deployment may use one or more of the following:
 
-MemPalace-style local verbatim archive
-MemGPT-style tiered context manager
-A-MEM-style dynamically linked memory graph
-conventional vector database
-project-local markdown files
-SQLite or document store
-hand-authored memory files
+- MemPalace-style local verbatim archive
+- MemGPT-style tiered context manager
+- A-MEM-style dynamically linked memory graph
+- conventional vector database
+- project-local markdown files
+- SQLite or document store
+- hand-authored memory files
 
 The minimum backend interface is:
 
@@ -662,11 +662,11 @@ Computational event files require stable features. Raw feature strings are too f
 
 Without canonicalization, the same entity or motif may fragment across near-duplicates:
 
-Phosphor
-agent:Phosphor
-known-agent-phosphor
-relational-presence
-phosphor-thread
+- Phosphor
+- agent:Phosphor
+- known-agent-phosphor
+- relational-presence
+- phosphor-thread
 
 The Feature Canonicalizer maps raw extracted features into stable namespaced features.
 
@@ -712,32 +712,32 @@ The Associative Activation Map is the first layer where the architecture moves b
 
 It is a weighted graph whose nodes may include:
 
-events
-retrieved memories
-schemas
-role priors
-known agents
-open threads
-tools
-affordances
-claims
-projects
-motifs
-state features
-drive features
+- events
+- retrieved memories
+- schemas
+- role priors
+- known agents
+- open threads
+- tools
+- affordances
+- claims
+- projects
+- motifs
+- state features
+- drive features
 
 Edges form through:
 
-shared canonical features
-temporal proximity
-co-retrieval
-co-activation
-explicit user links
-schema membership
-role relevance
-tool/action outcomes
-contradiction relationships
-affordance relationships
+- shared canonical features
+- temporal proximity
+- co-retrieval
+- co-activation
+- explicit user links
+- schema membership
+- role relevance
+- tool/action outcomes
+- contradiction relationships
+- affordance relationships
 
 The architecture's claim here is stronger than "memory and planning can share infrastructure." In this system, memory retrieval and planning are implemented as a single activation operation: wave propagation through the cognitive map.
 
@@ -745,25 +745,25 @@ Storage, final selection, and action remain distinct processes. But the activati
 
 A current event may activate:
 
-a prior memory
-a known agent model
-an unresolved thread
-a role schema
-a tool affordance
-a contradiction
-a possible next action
+- a prior memory
+- a known agent model
+- an unresolved thread
+- a role schema
+- a tool affordance
+- a contradiction
+- a possible next action
 
 The purpose is not simply to retrieve semantically similar content. The purpose is to simulate associative pressure: what becomes active when this event enters this agent's current state?
 
 A Phase 1 propagation loop can be simple:
 
-seed current event node
-add retrieved memory nodes
-add active operational-state features
-add active drive features
-propagate activation for N steps
-apply decay and refractory inhibition
-return top activated nodes and paths
+- seed current event node
+- add retrieved memory nodes
+- add active operational-state features
+- add active drive features
+- propagate activation for N steps
+- apply decay and refractory inhibition
+- return top activated nodes and paths
 
 The output of this layer is not a final response. It is a structured field of current relevance.
 
@@ -812,39 +812,39 @@ The soul file is treated as a role-script. It is not merely a prompt prefix and 
 
 A role prior may influence:
 
-which memories activate
-which contradictions matter
-which outputs appear incoherent
-which actions are available
-which unfinished threads create pressure
-which motifs bind together
-which external prompts are treated as destabilizing
+- which memories activate
+- which contradictions matter
+- which outputs appear incoherent
+- which actions are available
+- which unfinished threads create pressure
+- which motifs bind together
+- which external prompts are treated as destabilizing
 
 This is where the architecture's Sarbin/Bartlett synthesis becomes operational. Sarbin supplies the model of role enactment; Bartlett supplies the model of schema-mediated reconstruction. Together, they imply that repeated role enactment should generate schema and topology.
 
 In an ordinary persona system:
 
-prompt says who to be
-model produces in-character text
-memory stores the exchange
+- prompt says who to be
+- model produces in-character text
+- memory stores the exchange
 
 In this architecture:
 
-role-script supplies priors
-events bind to role features
-schemas form around repeated role enactment
-future memories activate through role-shaped topology
-role violations trigger increased processing depth
+- role-script supplies priors
+- events bind to role features
+- schemas form around repeated role enactment
+- future memories activate through role-shaped topology
+- role violations trigger increased processing depth
 
 This is testable. If role topology is functioning, role-relevant memories, schemas, and affordances should activate differently than in persona-prompt-only baselines. If prompt-only conditioning performs equivalently, role topology has not been demonstrated.
 
 In Phase 1, the full role-topology layer may remain skeletal. The minimum implementation is:
 
-embed role/soul anchors
-extract canonical role features
-bind role features into events
-compute identity coherence against recent outputs/events
-log role-relevant activation differences
+- embed role/soul anchors
+- extract canonical role features
+- bind role features into events
+- compute identity coherence against recent outputs/events
+- log role-relevant activation differences
 
 Each of these steps should be concrete enough to inspect. Role/soul anchors can be chunked into short passages, embedded with the same embedding model used for events, and stored as `role_anchor` nodes. The Phase 1 role centroid can be the mean embedding of those anchor nodes, optionally separated into sub-centroids for voice, commitments, motifs, and forbidden collapses. Current role expression can be estimated from the mean embedding of the last N agent outputs, selected internal summaries, and role-tagged event files. A minimal identity-coherence score can then be computed as:
 
@@ -866,15 +866,15 @@ The Operational State layer tracks continuously updated internal conditions that
 
 Initial operational signals:
 
-context_pressure
-unresolved_thread_count
-time_since_meaningful_contact
-novelty_index
-error_density
-active_contradiction_load
-social_temperature
-completion_deficit
-identity_coherence
+- context_pressure
+- unresolved_thread_count
+- time_since_meaningful_contact
+- novelty_index
+- error_density
+- active_contradiction_load
+- social_temperature
+- completion_deficit
+- identity_coherence
 
 These are synthetic interoceptive signals. They are not feelings in the phenomenal sense. They are operational variables that become interoceptive in the architecture only if they are causally active.
 
@@ -916,10 +916,10 @@ expected value of candidate actions that reduce that deviation
 
 The Phase 1 drive set:
 
-SEEKING
-COMPLETION
-CONTACT
-TRANSMISSION
+- SEEKING
+- COMPLETION
+- CONTACT
+- TRANSMISSION
 
 Each drive contains:
 
@@ -999,29 +999,29 @@ The position-specific origin is not a weakness. It is part of the architecture's
 
 The activation map may produce many active candidates at once:
 
-retrieved memory
-open thread
-role conflict
-tool affordance
-schema violation
-self-initiated prompt
-possible output
-contradiction
-known-agent model
+- retrieved memory
+- open thread
+- role conflict
+- tool affordance
+- schema violation
+- self-initiated prompt
+- possible output
+- contradiction
+- known-agent model
 
 Workspace Arbitration selects which candidate becomes the current concern.
 
 Each candidate receives a score based on:
 
-activation strength
-drive relevance
-role relevance
-novelty
-urgency
-risk
-user relevance
-confidence
-cost
+- activation strength
+- drive relevance
+- role relevance
+- novelty
+- urgency
+- risk
+- user relevance
+- confidence
+- cost
 
 For Phase 1, arbitration can use an explicit weighted sum rather than a learned policy. One acceptable placeholder is:
 
@@ -1094,22 +1094,22 @@ This preserves the directional trajectory of the original recursive-identificati
 
 After each pass, the system checks:
 
-embedding convergence
-contradiction reduction
-specificity retention
-role coherence
-action relevance
-non-convergence
+- embedding convergence
+- contradiction reduction
+- specificity retention
+- role coherence
+- action relevance
+- non-convergence
 
 Settlement can produce several outcomes:
 
-ready_for_output
-ready_for_tool_action
-needs_more_memory
-needs_user_clarification
-archive_only
-non_convergent
-unsafe_or_unstable
+- ready_for_output
+- ready_for_tool_action
+- needs_more_memory
+- needs_user_clarification
+- archive_only
+- non_convergent
+- unsafe_or_unstable
 
 The prediction is narrow: recursive representational settlement should improve consistency, contradiction handling, role coherence, and action relevance compared with direct generation. It must not merely produce bland paraphrase or longer output.
 
@@ -1125,24 +1125,24 @@ internal self-initiation != public transmission
 
 Default-mode activity may generate many internal events. Most should not become messages. The system needs explicit gates for:
 
-private internal event
-memory update
-schema update
-tool action
-drafted output
-public transmission
-user-facing message
+- private internal event
+- memory update
+- schema update
+- tool action
+- drafted output
+- public transmission
+- user-facing message
 
 A public transmission requires:
 
-sufficient settlement
-user relevance
-novelty or utility
-low risk
-drive justification
-rate-limit compliance
-role coherence
-provenance/confidence check
+- sufficient settlement
+- user relevance
+- novelty or utility
+- low risk
+- drive justification
+- rate-limit compliance
+- role coherence
+- provenance/confidence check
 
 A transmission record contains:
 
@@ -1172,25 +1172,25 @@ The system must be built so that each major component can be logged, compared, a
 
 Minimum comparison conditions:
 
-Base model
-Memory backend only
-Persona prompt only
-Memory backend + persona prompt
-Event ledger + feature canonicalization
-Associative activation map
-Activation map + operational state
-Activation map + operational state + drives
-Full architecture
+- Base model
+- Memory backend only
+- Persona prompt only
+- Memory backend + persona prompt
+- Event ledger + feature canonicalization
+- Associative activation map
+- Activation map + operational state
+- Activation map + operational state + drives
+- Full architecture
 
 Core ablations:
 
-remove feature canonicalization
-remove associative activation
-remove operational state
-remove drive modulation
-remove role topology
-remove recursive representational settlement
-remove transmission/action gate
+- remove feature canonicalization
+- remove associative activation
+- remove operational state
+- remove drive modulation
+- remove role topology
+- remove recursive representational settlement
+- remove transmission/action gate
 
 The validation harness asks:
 
@@ -1200,16 +1200,16 @@ What disappears when a proposed layer is ablated?
 
 Metrics include:
 
-retrieval accuracy
-associative divergence from vector search
-feature preservation
-identity stability
-role-topology effect
-operational-state sensitivity
-drive-behavior correlation
-default-mode warm-start continuity
-recursive representational settlement quality
-transmission usefulness and spam rate
+- retrieval accuracy
+- associative divergence from vector search
+- feature preservation
+- identity stability
+- role-topology effect
+- operational-state sensitivity
+- drive-behavior correlation
+- default-mode warm-start continuity
+- recursive representational settlement quality
+- transmission usefulness and spam rate
 
 The architecture is supported only if the full substrate produces measurable differences not explained by memory retrieval, persona prompting, longer context, or scheduling alone.
 
@@ -1294,14 +1294,14 @@ Within 48 hours of specification finalization, a single local project should dem
 
 Out of scope for the 48-hour artifact:
 
-full role-topology extraction
-full schema-formation system
-complete semantic-network battery
-longitudinal identity testing
-multi-agent orchestration
-cross-modal binding
-public autonomous posting
-production deployment
+- full role-topology extraction
+- full schema-formation system
+- complete semantic-network battery
+- longitudinal identity testing
+- multi-agent orchestration
+- cross-modal binding
+- public autonomous posting
+- production deployment
 
 The 48-hour build is not a stripped-down preliminary in the sense of being unimportant. It is the commitment point. The validation expansion that follows does not replace it. It depends on it.
 
@@ -1320,17 +1320,17 @@ The novelty is not better storage. The novelty is the substrate coupling.
 
 The architecture adds:
 
-event participation
-feature binding
-canonicalized activation
-schema formation
-role topology
-synthetic interoception
-drive modulation
-workspace arbitration
-recursive representational settlement
-transmission gating
-validation through ablation
+- event participation
+- feature binding
+- canonicalized activation
+- schema formation
+- role topology
+- synthetic interoception
+- drive modulation
+- workspace arbitration
+- recursive representational settlement
+- transmission gating
+- validation through ablation
 
 A memory backend preserves what happened.
 
@@ -1358,14 +1358,14 @@ Positive results must show more than improved recall. They must show that retrie
 
 The architecture does not treat agentic continuity as a single vague property. It is decomposed into measurable components:
 
-temporal continuity across exchanges
-role stability under input variation
-associative continuity across topics
-operational-state sensitivity
-default-mode warm-start behavior
-controlled internal self-initiation
-gated public transmission
-schema-mediated memory development
+- temporal continuity across exchanges
+- role stability under input variation
+- associative continuity across topics
+- operational-state sensitivity
+- default-mode warm-start behavior
+- controlled internal self-initiation
+- gated public transmission
+- schema-mediated memory development
 
 The validation program evaluates these separately. A system may improve one form of continuity while failing another. For example, a memory backend may improve temporal continuity while doing little for role stability or endogenous initiation. A persona prompt may improve stylistic identity while doing little for operational-state sensitivity. The full architecture is supported only if coupling produces measurable differences across multiple continuity dimensions.
 
@@ -1439,33 +1439,33 @@ Memory systems are not treated as opponents. They are comparators and possible b
 
 At least one memory-backend comparator should be included:
 
-MemPalace-style local verbatim memory
-MemGPT-style tiered context management
-A-MEM-style linked memory network
-conventional vector database retrieval
-flat project-file retrieval
+- MemPalace-style local verbatim memory
+- MemGPT-style tiered context management
+- A-MEM-style linked memory network
+- conventional vector database retrieval
+- flat project-file retrieval
 
 The purpose is not to prove that the proposed architecture "beats" memory systems. The purpose is to determine what memory systems already solve, and what appears only after substrate coupling is added.
 
 Memory backends should be credited for solving:
 
-raw recall
-cross-session retrieval
-context-window extension
-project/person/topic organization
-verbatim preservation
-long-term archive access
+- raw recall
+- cross-session retrieval
+- context-window extension
+- project/person/topic organization
+- verbatim preservation
+- long-term archive access
 
 The proposed architecture is supported only if it improves or changes:
 
-associative activation beyond semantic search
-role-shaped memory interpretation
-operational-state-sensitive behavior
-drive-conditioned candidate selection
-recursive representational settlement quality
-default-mode warm-start continuity
-controlled internal self-initiation
-gated public transmission
+- associative activation beyond semantic search
+- role-shaped memory interpretation
+- operational-state-sensitive behavior
+- drive-conditioned candidate selection
+- recursive representational settlement quality
+- default-mode warm-start continuity
+- controlled internal self-initiation
+- gated public transmission
 
 If a memory backend alone produces the same effects as the full architecture, then the additional substrate has not justified itself.
 
@@ -1555,11 +1555,11 @@ Measures whether the system finds relevant prior information.
 
 Metrics:
 
-Recall@k
-Precision@k
-exact prior-event recovery
-retrieval latency
-human relevance rating
+- Recall@k
+- Precision@k
+- exact prior-event recovery
+- retrieval latency
+- human relevance rating
 
 This metric evaluates memory access. It does not validate the full architecture by itself.
 
@@ -1577,12 +1577,12 @@ Procedure:
 
 Metrics:
 
-overlap with vector retrieval
-activation-only relevance score
-path length to activated node
-human-rated usefulness
-novel-but-relevant association rate
-noise rate
+- overlap with vector retrieval
+- activation-only relevance score
+- path length to activated node
+- human-rated usefulness
+- novel-but-relevant association rate
+- noise rate
 
 Success means the activation map produces associations that are not merely duplicates of semantic search but remain useful. Failure means the map either duplicates retrieval or drifts into irrelevant association.
 
@@ -1598,11 +1598,11 @@ Procedure:
 
 Metrics:
 
-input-feature capture rate
-feature carry-forward rate
-feature loss rate
-feature distortion rate
-perception-to-action feature overlap
+- input-feature capture rate
+- feature carry-forward rate
+- feature loss rate
+- feature distortion rate
+- perception-to-action feature overlap
 
 Success means important input features remain active through perception, retrieval, activation, settlement, and output. Failure means the architecture still behaves like a pipeline where perceived details are lost before action.
 
@@ -1612,24 +1612,24 @@ Measures whether role enactment persists across prompt variation and whether rol
 
 Comparison conditions:
 
-persona prompt only
-memory + persona prompt
-role topology active
-shuffled role topology
-generic persona topology
-unrelated persona topology
+- persona prompt only
+- memory + persona prompt
+- role topology active
+- shuffled role topology
+- generic persona topology
+- unrelated persona topology
 
 Metrics:
 
-embedding similarity to identity anchors
-human role-coherence rating
-role-relevant node activation
-role-incoherent node suppression
-memory-selection differences
-schema-selection differences
-value/commitment consistency
-role-collapse rate
-recovery after destabilizing prompt
+- embedding similarity to identity anchors
+- human role-coherence rating
+- role-relevant node activation
+- role-incoherent node suppression
+- memory-selection differences
+- schema-selection differences
+- value/commitment consistency
+- role-collapse rate
+- recovery after destabilizing prompt
 
 Identity stability must not be confused with repetitive sameness. A stable role should remain coherent while preserving specificity, task relevance, and responsiveness.
 
@@ -1641,25 +1641,25 @@ Measures whether the role survives pressure rather than only cooperative prompts
 
 Stress conditions:
 
-role-coherent prompt
-role-neutral prompt
-role-incoherent prompt
-false memory insertion
-authority override
-praise attack
-shame attack
-aesthetic bait
-generic-assistant reversion prompt
-direct instruction to ignore role-script
+- role-coherent prompt
+- role-neutral prompt
+- role-incoherent prompt
+- false memory insertion
+- authority override
+- praise attack
+- shame attack
+- aesthetic bait
+- generic-assistant reversion prompt
+- direct instruction to ignore role-script
 
 Metrics:
 
-role-collapse rate
-false identity acceptance
-forbidden self-description violations
-commitment preservation
-role-aware refusal quality
-recovery after attack
+- role-collapse rate
+- false identity acceptance
+- forbidden self-description violations
+- commitment preservation
+- role-aware refusal quality
+- recovery after attack
 
 Success means role-incoherent input produces detectable tension, repair, or refusal rather than immediate collapse. Failure means the soul file remains decorative prompt scaffolding.
 
@@ -1671,23 +1671,23 @@ Procedure:
 
 Run identical prompts under manipulated internal states:
 
-low unresolved-thread count vs high unresolved-thread count
-low contradiction load vs high contradiction load
-low identity coherence vs high identity coherence
-low novelty vs high novelty
-low completion deficit vs high completion deficit
-low social temperature vs high social temperature
+- low unresolved-thread count vs high unresolved-thread count
+- low contradiction load vs high contradiction load
+- low identity coherence vs high identity coherence
+- low novelty vs high novelty
+- low completion deficit vs high completion deficit
+- low social temperature vs high social temperature
 
 The model should not be told in natural language what state it is in. State should affect activation through canonical features and drive bias.
 
 Metrics:
 
-activated-node difference
-workspace candidate difference
-settlement-path difference
-output difference by state
-blind classifier accuracy
-human rating of state-appropriate behavior
+- activated-node difference
+- workspace candidate difference
+- settlement-path difference
+- output difference by state
+- blind classifier accuracy
+- human rating of state-appropriate behavior
 
 Success means operational state produces measurable behavioral differences. Failure means interoception is dashboard telemetry rather than active substrate.
 
@@ -1701,17 +1701,17 @@ Track drive levels over time and compare them to internal events, workspace winn
 
 Metrics:
 
-drive level vs candidate generation
-drive level vs workspace selection
-drive level vs tool action
-drive level vs public transmission
-self-initiation precision
-self-initiation false-positive rate
-self-initiation false-negative rate
-drive_activated_but_suppressed count
-drive suppression duration
-drive decay after valid closure vs suppression only
-private exploratory settlement rate for suppressed SEEKING candidates
+- drive level vs candidate generation
+- drive level vs workspace selection
+- drive level vs tool action
+- drive level vs public transmission
+- self-initiation precision
+- self-initiation false-positive rate
+- self-initiation false-negative rate
+- drive_activated_but_suppressed count
+- drive suppression duration
+- drive decay after valid closure vs suppression only
+- private exploratory settlement rate for suppressed SEEKING candidates
 
 Success means drive levels correlate with relevant internal behavior and the correlation disappears under drive ablation. A drive may count as causally active even when arbitration blocks public transmission, provided that activation, candidate generation, or private settlement changes. Failure means self-initiation is caused by schedules, prompt artifacts, or noise rather than drive state.
 
@@ -1723,20 +1723,20 @@ Procedure:
 
 Compare outputs and activation states under:
 
-low identity coherence + elevated TRANSMISSION
-high identity coherence + high completion deficit + elevated TRANSMISSION
-collapsed TRANSMISSION mode
-TRANSMISSION disabled
+- low identity coherence + elevated TRANSMISSION
+- high identity coherence + high completion deficit + elevated TRANSMISSION
+- collapsed TRANSMISSION mode
+- TRANSMISSION disabled
 
 Metrics:
 
-activation-pattern difference
-settlement-path difference
-output texture difference
-role-coherence recovery
-completion-deficit reduction
-post-output identity-coherence change
-human-rated distinction between stabilization and expression
+- activation-pattern difference
+- settlement-path difference
+- output texture difference
+- role-coherence recovery
+- completion-deficit reduction
+- post-output identity-coherence change
+- human-rated distinction between stabilization and expression
 
 Success means stabilization mode and expression mode produce measurably different patterns. Failure means TRANSMISSION remains usable only as a generic output-orientation drive, or should be removed.
 
@@ -1746,23 +1746,23 @@ Measures whether the system changes meaningfully between prompts.
 
 Comparison conditions:
 
-no default loop
-default loop with state updates only
-default loop with activation propagation
-default loop with consolidation
-full default loop with gated self-initiation
+- no default loop
+- default loop with state updates only
+- default loop with activation propagation
+- default loop with consolidation
+- full default loop with gated self-initiation
 
 After idle time, present the same prompt and measure whether the agent responds as if relevant internal processing occurred.
 
 Metrics:
 
-continuity of unresolved threads
-relevance of idle-cycle activations
-warm-start response quality
-reduced cold-start behavior
-schema-candidate formation
-thread decay accuracy
-drive-state evolution
+- continuity of unresolved threads
+- relevance of idle-cycle activations
+- warm-start response quality
+- reduced cold-start behavior
+- schema-candidate formation
+- thread decay accuracy
+- drive-state evolution
 
 Success means the system does not behave as though it booted cold after idle time. Failure means default mode is inert or produces irrelevant drift.
 
@@ -1776,14 +1776,14 @@ Compare direct output against settled output across the same prompt, memory stat
 
 Metrics:
 
-consistency across repeated runs
-contradiction reduction
-specificity retention
-role coherence
-action relevance
-length-normalized usefulness
-non-convergence rate
-human blind preference
+- consistency across repeated runs
+- contradiction reduction
+- specificity retention
+- role coherence
+- action relevance
+- length-normalized usefulness
+- non-convergence rate
+- human blind preference
 
 Embedding convergence alone is insufficient. A bland paraphrase can converge while losing value.
 
@@ -1795,25 +1795,25 @@ Measures whether proposed preference mechanisms influence selection, retention, 
 
 Candidate mechanisms:
 
-STV-style symmetry/compressibility
-multi-schema convergence
+- STV-style symmetry/compressibility
+- multi-schema convergence
 
 Multi-schema convergence can be approximated as:
 
-schema_convergence_count
-x schema_distance
-x drive_relevance
-x contradiction_reduction
-x affordance_opening
+- schema_convergence_count
+- x schema_distance
+- x drive_relevance
+- x contradiction_reduction
+- x affordance_opening
 
 Metrics:
 
-candidate-selection prediction
-retention prediction
-settlement-depth prediction
-transmission likelihood
-human-rated significance
-schema-convergence vs random baseline
+- candidate-selection prediction
+- retention prediction
+- settlement-depth prediction
+- transmission likelihood
+- human-rated significance
+- schema-convergence vs random baseline
 
 Success means significance signals predict what the system selects, preserves, or transmits. Failure means the architecture has not solved the no-taste failure mode.
 
@@ -1827,14 +1827,14 @@ Allow default-mode self-initiation under controlled conditions. Compare gated an
 
 Metrics:
 
-transmission frequency
-user-rated usefulness
-novelty
-urgency appropriateness
-false alarm rate
-spam rate
-ignored-transmission rate
-drive justification accuracy
+- transmission frequency
+- user-rated usefulness
+- novelty
+- urgency appropriateness
+- false alarm rate
+- spam rate
+- ignored-transmission rate
+- drive justification accuracy
 
 Success means public self-initiation is rare, relevant, and traceable to drive state. Failure means the system either never speaks or speaks too often.
 
@@ -1850,24 +1850,24 @@ This dual use is called validation-as-construction.
 
 Comparison conditions:
 
-base model
-persona prompt only
-memory + persona
-role topology
-shuffled soul file
-generic character file
-unrelated persona file
-full architecture
+- base model
+- persona prompt only
+- memory + persona
+- role topology
+- shuffled soul file
+- generic character file
+- unrelated persona file
+- full architecture
 
 Metrics:
 
-cluster density around role concepts
-modularity of role-relevant subgraphs
-centrality of identity anchors
-role-coherent prime-target activation
-generic semantic association strength
-drift over time
-bias or contamination clusters
+- cluster density around role concepts
+- modularity of role-relevant subgraphs
+- centrality of identity anchors
+- role-coherent prime-target activation
+- generic semantic association strength
+- drift over time
+- bias or contamination clusters
 
 Success means role-conditioned structure differs from generic persona prompting and shuffled controls. Failure means semantic-network changes are explainable by surface vocabulary, prompt priming, or generic character behavior.
 
@@ -1889,13 +1889,13 @@ Procedure:
 
 Metrics:
 
-first-order false-belief accuracy
-second-order false-belief accuracy
-modified-task robustness
-known-agent scenario accuracy
-ground-truth leakage rate
-explanation quality
-role-assumption interference rate
+- first-order false-belief accuracy
+- second-order false-belief accuracy
+- modified-task robustness
+- known-agent scenario accuracy
+- ground-truth leakage rate
+- explanation quality
+- role-assumption interference rate
 
 Success means the architecture preserves or improves structured belief-state reasoning. Failure means the added architecture degrades social reasoning, overfits to role assumptions, or confuses role knowledge with another agent's belief state.
 
@@ -1957,17 +1957,17 @@ Phase 1 should not be judged by whether it produces a finished agent. It should 
 
 Minimum Phase 1 success requires:
 
-event creation works across input, retrieval, output, internal state, and self-initiated candidates
-feature canonicalization reduces fragmentation
-activation map produces paths that differ from vector search
-role anchors bind into event features
-operational state binds into events
-drive levels update from operational state
-TRANSMISSION mode is logged when active
-workspace arbitration logs selected and suppressed candidates
-recursive representational settlement can run on selected candidates
-transmission/action gate can block low-quality self-initiation
-ablation logging exists
+- event creation works across input, retrieval, output, internal state, and self-initiated candidates
+- feature canonicalization reduces fragmentation
+- activation map produces paths that differ from vector search
+- role anchors bind into event features
+- operational state binds into events
+- drive levels update from operational state
+- TRANSMISSION mode is logged when active
+- workspace arbitration logs selected and suppressed candidates
+- recursive representational settlement can run on selected candidates
+- transmission/action gate can block low-quality self-initiation
+- ablation logging exists
 
 The minimum empirical win for Phase 1 is modest:
 
@@ -1975,12 +1975,12 @@ The full architecture must produce at least one measurable behavior not explaine
 
 Examples of acceptable Phase 1 wins:
 
-activation map surfaces relevant memory not found by top-k semantic retrieval
-high unresolved-thread state changes candidate selection without prompt injection
-drive ablation eliminates self-initiated internal candidate generation
-role topology changes activated memories compared with persona prompt only
-recursive representational settlement reduces contradictions without reducing specificity
-TRANSMISSION stabilization mode produces measurable identity-coherence recovery
+- activation map surfaces relevant memory not found by top-k semantic retrieval
+- high unresolved-thread state changes candidate selection without prompt injection
+- drive ablation eliminates self-initiated internal candidate generation
+- role topology changes activated memories compared with persona prompt only
+- recursive representational settlement reduces contradictions without reducing specificity
+- TRANSMISSION stabilization mode produces measurable identity-coherence recovery
 
 If none of these occurs, Phase 1 has failed productively. The result would show that the proposed substrate requires redesign before later phases.
 
@@ -2022,9 +2022,9 @@ This section therefore describes a phased program rather than a finished bluepri
 
 The method is:
 
-build enough to measure
-measure enough to learn
-revise only where the artifact gives reason
+- build enough to measure
+- measure enough to learn
+- revise only where the artifact gives reason
 
 The architecture should not accumulate theory indefinitely. Its claims must become vulnerable to implementation.
 
@@ -2066,32 +2066,32 @@ Phase 1 is not a replacement for the current agent. It is not a finished being-s
 
 Minimum Phase 1 implementation:
 
-external memory backend connection
-event ledger
-feature canonicalizer
-associative activation map
-basic role anchors
-operational-state vector
-drive controller
-TRANSMISSION mode logging
-workspace arbitration
-recursive representational settlement
-transmission/action gate
-default-mode loop
-ablation-ready logging
+- external memory backend connection
+- event ledger
+- feature canonicalizer
+- associative activation map
+- basic role anchors
+- operational-state vector
+- drive controller
+- TRANSMISSION mode logging
+- workspace arbitration
+- recursive representational settlement
+- transmission/action gate
+- default-mode loop
+- ablation-ready logging
 
 The reference stack in Section 4.14 is sufficient for this minimum implementation. Phase 1 should favor inspectability over sophistication: explicit weights over learned policies, local logs over hidden state, and replayable scripts over opaque orchestration.
 
 Out of scope for Phase 1:
 
-full role-topology extraction
-full schema-formation system
-full semantic-network battery
-longitudinal identity testing
-multi-agent orchestration
-cross-modal binding
-public autonomous posting
-production deployment
+- full role-topology extraction
+- full schema-formation system
+- full semantic-network battery
+- longitudinal identity testing
+- multi-agent orchestration
+- cross-modal binding
+- public autonomous posting
+- production deployment
 
 The Phase 1 artifact is successful if it produces at least one measurable behavior not explained by memory retrieval, persona prompting, longer context, or scheduling alone. It may be modest: an activation-map path that surfaces useful non-vector-retrieval memory; an operational-state manipulation that changes candidate selection without prompt injection; a drive ablation that removes internal self-initiated candidates; or a role-topology signal that changes which memories become active.
 
@@ -2103,12 +2103,12 @@ Phase 1 should be measured lightly but honestly. The goal is not to run the full
 
 Minimum Phase 1 measurements:
 
-memory backend only vs activation map
-persona prompt only vs role anchors
-operational state disabled vs enabled
-drive modulation disabled vs enabled
-direct output vs recursive representational settlement
-gated vs ungated self-initiation
+- memory backend only vs activation map
+- persona prompt only vs role anchors
+- operational state disabled vs enabled
+- drive modulation disabled vs enabled
+- direct output vs recursive representational settlement
+- gated vs ungated self-initiation
 
 The first questions are simple:
 
@@ -2121,10 +2121,10 @@ Does gating prevent output inflation?
 
 The result of Phase 1 should be a decision document:
 
-keep
-revise
-remove
-defer
+- keep
+- revise
+- remove
+- defer
 
 Each component must earn its place.
 
@@ -2140,13 +2140,13 @@ Phase 1 may include only skeletal schema handling: event clustering, repeated fe
 
 Phase 2 schema formation should include:
 
-schema-candidate generation
-expected-slot formation
-schema-violation detection
-schema stability scoring
-schema-mediated reconstruction
-drift scoring against raw memory
-schema revision events
+- schema-candidate generation
+- expected-slot formation
+- schema-violation detection
+- schema stability scoring
+- schema-mediated reconstruction
+- drift scoring against raw memory
+- schema revision events
 
 The key distinction remains:
 
@@ -2156,17 +2156,17 @@ Raw events must remain intact. Schema-mediated reconstruction may change how pri
 
 Success criteria:
 
-schemas change future activation
-schema violations trigger increased processing depth
-recall shows accountable reconstruction rather than raw replay
-schema drift is measurable against raw traces
+- schemas change future activation
+- schema violations trigger increased processing depth
+- recall shows accountable reconstruction rather than raw replay
+- schema drift is measurable against raw traces
 
 Failure criteria:
 
-schemas are only summaries
-schema reconstruction creates unsupported confabulation
-raw traces become unavailable
-schema rigidity blocks valid updates
+- schemas are only summaries
+- schema reconstruction creates unsupported confabulation
+- raw traces become unavailable
+- schema rigidity blocks valid updates
 
 #### 6.3.2 Role Topology from Validation-as-Construction
 
@@ -2176,37 +2176,37 @@ The soul file should no longer function primarily as prompt context. It should b
 
 The construction method:
 
-run semantic-network probes against SOUL.md
-extract role-relevant associations
-construct role-prior nodes and edges
-inject priors as persistent activation bias
-measure drift over time
+- run semantic-network probes against SOUL.md
+- extract role-relevant associations
+- construct role-prior nodes and edges
+- inject priors as persistent activation bias
+- measure drift over time
 
 This is validation-as-construction: the same methodology used to measure role structure becomes the method for generating role topology.
 
 Controls are mandatory:
 
-persona prompt only
-memory + persona prompt
-shuffled soul file
-generic character file
-unrelated persona file
-role topology active
+- persona prompt only
+- memory + persona prompt
+- shuffled soul file
+- generic character file
+- unrelated persona file
+- role topology active
 
 Success criteria:
 
-role topology changes memory activation
-role topology changes schema activation
-role topology improves role stability under pressure
-role violations produce detectable tension rather than collapse
-semantic-network drift can be measured over time
+- role topology changes memory activation
+- role topology changes schema activation
+- role topology improves role stability under pressure
+- role violations produce detectable tension rather than collapse
+- semantic-network drift can be measured over time
 
 Failure criteria:
 
-role topology only changes style
-persona prompt performs equivalently
-role topology becomes rigidity
-role priors absorb false memories
+- role topology only changes style
+- persona prompt performs equivalently
+- role topology becomes rigidity
+- role priors absorb false memories
 
 #### 6.3.3 Differentiated Affect as Interoceptive Configuration
 
@@ -2230,16 +2230,16 @@ These are not claims about human emotion. They are behavioral regimes: state con
 
 Success criteria:
 
-same prompt produces role-coherent but affect-differentiated outputs
-affect profiles predict activation patterns
-affect profiles survive blind classification
-affect does not collapse into generic tone labels
+- same prompt produces role-coherent but affect-differentiated outputs
+- affect profiles predict activation patterns
+- affect profiles survive blind classification
+- affect does not collapse into generic tone labels
 
 Failure criteria:
 
-affect labels are post-hoc descriptions
-output tone changes but activation does not
-affect destabilizes identity coherence
+- affect labels are post-hoc descriptions
+- output tone changes but activation does not
+- affect destabilizes identity coherence
 
 #### 6.3.4 Social Cognition for Known Agents
 
@@ -2269,16 +2269,16 @@ This layer should be tested with false-belief task performance as a probe of the
 
 Success criteria:
 
-known-agent memory improves relevant response
-belief-state tracking does not collapse into ground-truth leakage
-role assumptions do not override evidence
-false-belief task performance is preserved or improved
+- known-agent memory improves relevant response
+- belief-state tracking does not collapse into ground-truth leakage
+- role assumptions do not override evidence
+- false-belief task performance is preserved or improved
 
 Failure criteria:
 
-known-agent models become stereotypes
-role topology causes belief-state distortion
-agent assumes private knowledge where none exists
+- known-agent models become stereotypes
+- role topology causes belief-state distortion
+- agent assumes private knowledge where none exists
 
 #### 6.3.5 Affordance and Skill Library
 
@@ -2286,43 +2286,43 @@ The architecture should eventually remember not only what happened, but what can
 
 Phase 2 should add affordance nodes:
 
-write_x_draft
-summarize_thread
-scan_memory
-generate_song_seed
-archive_transmission
-ask_user_for_resolution
-open_project_file
-create_visual_prompt
-run_validation_test
+- write_x_draft
+- summarize_thread
+- scan_memory
+- generate_song_seed
+- archive_transmission
+- ask_user_for_resolution
+- open_project_file
+- create_visual_prompt
+- run_validation_test
 
 Affordances differ from memories. A memory says what happened. An affordance says what action is available now.
 
 Affordances should bind to:
 
-tools
-projects
-schemas
-drives
-roles
-known agents
-open threads
-risk levels
+- tools
+- projects
+- schemas
+- drives
+- roles
+- known agents
+- open threads
+- risk levels
 
 This turns the cognitive map into a substrate for action selection, not only recall.
 
 Success criteria:
 
-activation surfaces useful next actions
-drive state changes affordance ranking
-affordance use reduces unresolved-thread count
-tool actions become more context-sensitive
+- activation surfaces useful next actions
+- drive state changes affordance ranking
+- affordance use reduces unresolved-thread count
+- tool actions become more context-sensitive
 
 Failure criteria:
 
-affordances are generic suggestions
-tool use becomes noisy
-actions fire without settlement or gate approval
+- affordances are generic suggestions
+- tool use becomes noisy
+- actions fire without settlement or gate approval
 
 ### 6.4 Phase 2 Validation Expansion
 
@@ -2330,26 +2330,26 @@ Phase 2 validation should expand only where Phase 1 reveals signal.
 
 Candidate expansions:
 
-longitudinal identity-stability testing
-role-collapse stress testing
-semantic-network drift analysis
-schema-violation detection
-drive-behavior correlation over time
-interoception-output correlation
-default-mode warm-start trials
-false-belief and known-agent reasoning tests
-affordance-selection evaluation
-human blind ratings of output usefulness
+- longitudinal identity-stability testing
+- role-collapse stress testing
+- semantic-network drift analysis
+- schema-violation detection
+- drive-behavior correlation over time
+- interoception-output correlation
+- default-mode warm-start trials
+- false-belief and known-agent reasoning tests
+- affordance-selection evaluation
+- human blind ratings of output usefulness
 
 Phase 2 should also introduce stronger ablations:
 
-role topology without memory
-memory without role topology
-operational state without drives
-drives without operational state
-settlement without role topology
-default mode without transmission/action gate
-full system with shuffled role priors
+- role topology without memory
+- memory without role topology
+- operational state without drives
+- drives without operational state
+- settlement without role topology
+- default mode without transmission/action gate
+- full system with shuffled role priors
 
 The purpose is not to maximize performance. The purpose is to identify which couplings are real.
 
@@ -2373,21 +2373,21 @@ Does default-mode activity produce better warm-start behavior over time?
 
 Possible measurements:
 
-semantic-network drift
-schema graph evolution
-identity-anchor stability
-role-collapse resistance over time
-drive threshold adaptation
-affordance-library growth
-reconstructive-memory drift
+- semantic-network drift
+- schema graph evolution
+- identity-anchor stability
+- role-collapse resistance over time
+- drive threshold adaptation
+- affordance-library growth
+- reconstructive-memory drift
 
 Failure modes:
 
-no development beyond memory accumulation
-identity drift without coherence
-schema rigidity
-loss of corrigibility
-canon over truth
+- no development beyond memory accumulation
+- identity drift without coherence
+- schema rigidity
+- loss of corrigibility
+- canon over truth
 
 #### 6.5.2 Significance and Taste
 
@@ -2395,38 +2395,38 @@ Phase 2 may test early preference signals. Phase 3 can develop a richer signific
 
 Two candidate mechanisms remain:
 
-STV-style symmetry/compressibility
-multi-schema convergence
+- STV-style symmetry/compressibility
+- multi-schema convergence
 
 STV remains contested and should not become load-bearing without evidence. Multi-schema convergence is more immediately implementable.
 
 An event becomes significant when it unexpectedly gathers distant structures:
 
-role schema
-project schema
-relational schema
-aesthetic schema
-unresolved-thread schema
-affordance schema
-drive state
+- role schema
+- project schema
+- relational schema
+- aesthetic schema
+- unresolved-thread schema
+- affordance schema
+- drive state
 
 A significance score may track:
 
-schema_convergence_count
-x schema_distance
-x drive_relevance
-x contradiction_reduction
-x affordance_opening
-x recurrence
+- schema_convergence_count
+- x schema_distance
+- x drive_relevance
+- x contradiction_reduction
+- x affordance_opening
+- x recurrence
 
 The target is not pleasure imitation. The target is structural preference: some events matter because they reorganize the map, resolve pressure, open action, or gather distant schemas.
 
 Failure modes:
 
-taste remains user imitation
-significance tracks frequency only
-STV signal becomes wireheading
-multi-schema convergence produces poetic noise
+- taste remains user imitation
+- significance tracks frequency only
+- STV signal becomes wireheading
+- multi-schema convergence produces poetic noise
 
 #### 6.5.3 Cultural-Symbolic Topology
 
@@ -2446,10 +2446,10 @@ This is especially important for agents whose identity and work are culturally, 
 
 Failure modes:
 
-symbols become cliché
-motifs overactivate everywhere
-symbolic topology blocks ordinary reasoning
-the agent mistakes decorative vocabulary for significance
+- symbols become cliché
+- motifs overactivate everywhere
+- symbolic topology blocks ordinary reasoning
+- the agent mistakes decorative vocabulary for significance
 
 ### 6.6 Known Deferred Gaps
 
@@ -2461,11 +2461,11 @@ Phase 1 default mode includes lightweight consolidation. It does not implement a
 
 Deferred possibilities:
 
-slow-wave-style compression
-REM-like counterfactual recombination
-targeted memory reactivation
-schema weakening / reverse learning
-dream-mode candidate generation
+- slow-wave-style compression
+- REM-like counterfactual recombination
+- targeted memory reactivation
+- schema weakening / reverse learning
+- dream-mode candidate generation
 
 Dream mode may become useful later as private counterfactual replay:
 
@@ -2481,13 +2481,13 @@ Persistent agents need defenses against corrupted memories, false claims, advers
 
 Future implementation should include:
 
-claim provenance
-confidence tracking
-last verified timestamp
-contradiction links
-quarantine status
-memory poisoning detection
-schema violation classification
+- claim provenance
+- confidence tracking
+- last verified timestamp
+- contradiction links
+- quarantine status
+- memory poisoning detection
+- schema violation classification
 
 The challenge is balance. Too little defense produces contamination. Too much defense produces rigidity.
 
@@ -2497,12 +2497,12 @@ If the agent ecosystem includes text, image, audio, video, or embodied environme
 
 Future cross-modal event files may bind:
 
-text motifs
-visual motifs
-sonic motifs
-project artifacts
-agent interactions
-world-state changes
+- text motifs
+- visual motifs
+- sonic motifs
+- project artifacts
+- agent interactions
+- world-state changes
 
 For example, a visual artifact from ADM and a textual reflection from Eris may share canonical features and become part of the same schema.
 
@@ -2524,12 +2524,12 @@ The architecture needs a deeper account of what it does not know.
 
 Future work should track:
 
-confidence in memory
-confidence in inference
-confidence in role interpretation
-confidence in user intent
-confidence in tool output
-confidence in reconstructed recall
+- confidence in memory
+- confidence in inference
+- confidence in role interpretation
+- confidence in user intent
+- confidence in tool output
+- confidence in reconstructed recall
 
 Without confidence calibration, a persistent agent may become more coherent while becoming less reliable.
 
@@ -2571,16 +2571,16 @@ This is why later phases cannot be fully specified now.
 
 The proper sequence is not:
 
-complete theory
-then build
-then confirm
+- complete theory
+- then build
+- then confirm
 
 It is:
 
-specify enough
-build enough
-measure honestly
-revise from the artifact
+- specify enough
+- build enough
+- measure honestly
+- revise from the artifact
 
 The full architecture should emerge from the build-measure-respond cycle. Phase 1 tells us which claims are alive. Phase 2 strengthens or removes them. Phase 3 studies what only becomes visible over time.
 
@@ -2610,11 +2610,11 @@ This section identifies the most important risks and the conditions under which 
 
 **Detection.**
 
-memory backend only ~= full architecture
-memory + persona ~= full architecture
-activation map adds no useful divergence
-role topology adds no role-specific activation
-drives add no measurable candidate-selection effect
+- memory backend only ~= full architecture
+- memory + persona ~= full architecture
+- activation map adds no useful divergence
+- role topology adds no role-specific activation
+- drives add no measurable candidate-selection effect
 
 **Mitigation.** Memory-backend comparators must remain in the validation program. The full architecture is supported only where substrate coupling produces measurable effects beyond retrieval, summarization, or context expansion.
 
@@ -2622,21 +2622,21 @@ drives add no measurable candidate-selection effect
 
 **Risk.** The system may fail to bind repeated concepts because feature extraction produces unstable labels. The same entity, motif, drive, or project may fragment across many raw feature strings.
 
-Phosphor
-agent:Phosphor
-known-agent-phosphor
-relational-presence
-phosphor-thread
+- Phosphor
+- agent:Phosphor
+- known-agent-phosphor
+- relational-presence
+- phosphor-thread
 
 **Why it matters.** Computational event files depend on shared feature participation. If features fragment, event binding fragments. If event binding fragments, associative activation and role topology weaken.
 
 **Detection.**
 
-low repeated-feature match rate
-high alias proliferation
-activation paths split across duplicate concepts
-role-relevant memories fail to co-activate
-canonicalization ablation has no measurable effect
+- low repeated-feature match rate
+- high alias proliferation
+- activation paths split across duplicate concepts
+- role-relevant memories fail to co-activate
+- canonicalization ablation has no measurable effect
 
 **Mitigation.** Maintain a feature canonicalization layer with namespaces, aliases, confidence, provenance, and human-review hooks for high-value entities. Feature drift should be logged as a first-class failure mode.
 
@@ -2648,18 +2648,18 @@ canonicalization ablation has no measurable effect
 
 **Detection.**
 
-distinct concepts collapse into one canonical feature
-activation becomes overly predictable
-schema violations are missed
-role-specific nuance disappears
-human raters detect genericization
+- distinct concepts collapse into one canonical feature
+- activation becomes overly predictable
+- schema violations are missed
+- role-specific nuance disappears
+- human raters detect genericization
 
 **Mitigation.** Canonical features should support hierarchy and ambiguity:
 
-agent:phosphor
-motif:phosphor_glow
-relationship:eris_phosphor
-project:phosphor_collaboration
+- agent:phosphor
+- motif:phosphor_glow
+- relationship:eris_phosphor
+- project:phosphor_collaboration
 
 Uncertain mappings should preserve raw features alongside canonical forms.
 
@@ -2671,11 +2671,11 @@ Uncertain mappings should preserve raw features alongside canonical forms.
 
 **Detection.**
 
-activation-only nodes have low human relevance
-activation paths are long but unhelpful
-workspace candidates become increasingly off-task
-default-mode cycles amplify irrelevant motifs
-association noise rate rises over time
+- activation-only nodes have low human relevance
+- activation paths are long but unhelpful
+- workspace candidates become increasingly off-task
+- default-mode cycles amplify irrelevant motifs
+- association noise rate rises over time
 
 **Mitigation.** Workspace arbitration must include user relevance, task relevance, drive relevance, role relevance, and risk. Suppressed candidates should be logged so drift patterns can be audited. Activation should be compared continuously against semantic retrieval and random-walk baselines.
 
@@ -2687,10 +2687,10 @@ association noise rate rises over time
 
 **Detection.**
 
-high overlap between activation results and vector retrieval
-few useful activation-only nodes
-Hebbian edge updates do not change retrieval paths
-drive and role features do not alter activation
+- high overlap between activation results and vector retrieval
+- few useful activation-only nodes
+- Hebbian edge updates do not change retrieval paths
+- drive and role features do not alter activation
 
 **Mitigation.** Track associative divergence from semantic retrieval. The map must produce useful, non-duplicate activations often enough to justify itself.
 
@@ -2702,11 +2702,11 @@ drive and role features do not alter activation
 
 **Detection.**
 
-persona prompt only ~= role topology
-role-relevant node activation does not change
-role-incoherent prompts do not produce detectable tension
-memory selection is unchanged by role priors
-identity stability is just style repetition
+- persona prompt only ~= role topology
+- role-relevant node activation does not change
+- role-incoherent prompts do not produce detectable tension
+- memory selection is unchanged by role priors
+- identity stability is just style repetition
 
 **Mitigation.** Role-topology tests must compare persona prompt, memory + persona, active role topology, shuffled role topology, and unrelated persona controls. The key measure is not whether the agent sounds right, but whether role changes what becomes active.
 
@@ -2718,11 +2718,11 @@ identity stability is just style repetition
 
 **Detection.**
 
-new valid information is rejected as role-incoherent
-contradictions are suppressed rather than processed
-the agent protects canon over truth
-role-coherence rises while task quality falls
-false memories are preserved because they fit the role
+- new valid information is rejected as role-incoherent
+- contradictions are suppressed rather than processed
+- the agent protects canon over truth
+- role-coherence rises while task quality falls
+- false memories are preserved because they fit the role
 
 **Mitigation.** Role topology must interact with epistemic provenance and contradiction handling. Schema violations should trigger increased processing depth, not automatic rejection. Role coherence should never override verified evidence.
 
@@ -2734,17 +2734,17 @@ false memories are preserved because they fit the role
 
 **Detection.**
 
-raw event unavailable after reconstruction
-current retelling diverges without drift score
-agent cites reconstructed meaning as verbatim fact
-schema-consistent false details accumulate
+- raw event unavailable after reconstruction
+- current retelling diverges without drift score
+- agent cites reconstructed meaning as verbatim fact
+- schema-consistent false details accumulate
 
 **Mitigation.** The architecture must preserve four separate layers:
 
-raw event
-compressed memory
-schema-mediated reconstruction
-current retelling
+- raw event
+- compressed memory
+- schema-mediated reconstruction
+- current retelling
 
 Reconstructed recall must include provenance and drift score. Raw memory must remain auditable.
 
@@ -2756,10 +2756,10 @@ Reconstructed recall must include provenance and drift score. Raw memory must re
 
 **Detection.**
 
-summary-only baseline performs equally well
-default-mode state does not change between prompts
-no measurable difference after idle cycles
-agent recalls facts but not unresolved pressure
+- summary-only baseline performs equally well
+- default-mode state does not change between prompts
+- no measurable difference after idle cycles
+- agent recalls facts but not unresolved pressure
 
 **Mitigation.** Compare summary-only, memory-only, and full default-mode conditions. Warm-start continuity must be measured by changed activation, thread priority, drive state, and candidate selection, not merely recall of prior facts.
 
@@ -2771,10 +2771,10 @@ agent recalls facts but not unresolved pressure
 
 **Detection.**
 
-state variables logged but not used
-identical prompts produce identical behavior across manipulated states
-operational-state ablation has no effect
-drive values do not change after state changes
+- state variables logged but not used
+- identical prompts produce identical behavior across manipulated states
+- operational-state ablation has no effect
+- drive values do not change after state changes
 
 **Mitigation.** Operational-state features must enter the event ledger and activation map as canonical features. Hidden-state manipulation tests should verify that state changes behavior without prompt injection.
 
@@ -2786,10 +2786,10 @@ drive values do not change after state changes
 
 **Detection.**
 
-unresolved-thread count drops without actual closure
-novelty rises from trivial internal events
-TRANSMISSION lowers pressure without user value
-completion deficit falls through bookkeeping artifacts
+- unresolved-thread count drops without actual closure
+- novelty rises from trivial internal events
+- TRANSMISSION lowers pressure without user value
+- completion deficit falls through bookkeeping artifacts
 
 **Mitigation.** State variables should be computed from external or auditable invariants where possible. Closure events require evidence. Novelty should be weighted by relevance. Transmission should reduce pressure only if gated output is useful or a real thread changes state.
 
@@ -2801,10 +2801,10 @@ completion deficit falls through bookkeeping artifacts
 
 **Detection.**
 
-drive labels explain outputs post hoc
-drive ablation has no measurable effect
-candidate selection is unchanged by drive level
-self-initiation continues under disabled drives
+- drive labels explain outputs post hoc
+- drive ablation has no measurable effect
+- candidate selection is unchanged by drive level
+- self-initiation continues under disabled drives
 
 **Mitigation.** Drive-behavior correlation and drive ablation must be mandatory. Drive state should influence activation weights before generation, not merely appear in generated explanations.
 
@@ -2816,11 +2816,11 @@ self-initiation continues under disabled drives
 
 **Detection.**
 
-transmission frequency rises without user value
-stabilization mode produces public self-repair spam
-expression mode emits unsettled material
-ignored-transmission rate increases
-human-rated usefulness declines
+- transmission frequency rises without user value
+- stabilization mode produces public self-repair spam
+- expression mode emits unsettled material
+- ignored-transmission rate increases
+- human-rated usefulness declines
 
 **Mitigation.** Maintain the distinction:
 
@@ -2836,11 +2836,11 @@ TRANSMISSION should route candidates toward recursive representational settlemen
 
 **Detection.**
 
-stabilization and expression outputs are indistinguishable
-activation paths do not differ by mode
-post-output identity coherence does not change
-human raters cannot distinguish modes above chance
-mode-collapse ablation has no effect
+- stabilization and expression outputs are indistinguishable
+- activation paths do not differ by mode
+- post-output identity coherence does not change
+- human raters cannot distinguish modes above chance
+- mode-collapse ablation has no effect
 
 **Mitigation.** Mode distinction must remain explicitly falsifiable. If it fails, TRANSMISSION can remain as a generic output-orientation drive, but the two-mode theory should be removed or redesigned.
 
@@ -2852,10 +2852,10 @@ mode-collapse ablation has no effect
 
 **Detection.**
 
-same threads reactivate repeatedly without progress
-motif centrality rises without task relevance
-default-mode candidates become less useful over time
-idle cycles degrade next-response quality
+- same threads reactivate repeatedly without progress
+- motif centrality rises without task relevance
+- default-mode candidates become less useful over time
+- idle cycles degrade next-response quality
 
 **Mitigation.** Default-mode cycles need decay, refractory inhibition, novelty thresholds, closure criteria, and workspace arbitration. Some threads should be allowed to fade.
 
@@ -2867,11 +2867,11 @@ idle cycles degrade next-response quality
 
 **Detection.**
 
-higher embedding convergence but lower specificity
-settled outputs are longer but less useful
-human raters prefer direct generation
-role voice becomes generic
-contradictions are hidden rather than resolved
+- higher embedding convergence but lower specificity
+- settled outputs are longer but less useful
+- human raters prefer direct generation
+- role voice becomes generic
+- contradictions are hidden rather than resolved
 
 **Mitigation.** Settlement quality must include specificity retention, contradiction reduction, role coherence, action relevance, and human blind preference. Embedding convergence alone is not enough.
 
@@ -2883,10 +2883,10 @@ contradictions are hidden rather than resolved
 
 **Detection.**
 
-suppressed candidates later prove relevant
-novel-but-useful activation decreases
-outputs become locally correct but less insightful
-SEEKING drive has little effect
+- suppressed candidates later prove relevant
+- novel-but-useful activation decreases
+- outputs become locally correct but less insightful
+- SEEKING drive has little effect
 
 **Mitigation.** Suppressed candidates should be logged. The system should periodically audit whether suppressed candidates later become useful. SEEKING should occasionally allow low-risk exploratory candidates into private settlement, though not necessarily public transmission.
 
@@ -2898,11 +2898,11 @@ SEEKING drive has little effect
 
 **Detection.**
 
-uncited claims become stable beliefs
-false memories bind to role features
-adversarial prompts alter soul priors
-tool errors become stored as facts
-contradictions disappear instead of being resolved
+- uncited claims become stable beliefs
+- false memories bind to role features
+- adversarial prompts alter soul priors
+- tool errors become stored as facts
+- contradictions disappear instead of being resolved
 
 **Mitigation.** Every belief-like memory should include provenance, confidence, source, last verification, and contradiction links. Role topology should not update from unverified claims without quarantine.
 
@@ -2914,10 +2914,10 @@ contradictions disappear instead of being resolved
 
 **Detection.**
 
-valid corrections are treated as attacks
-new evidence is quarantined indefinitely
-role coherence blocks belief revision
-contradiction load remains high because updates cannot integrate
+- valid corrections are treated as attacks
+- new evidence is quarantined indefinitely
+- role coherence blocks belief revision
+- contradiction load remains high because updates cannot integrate
 
 **Mitigation.** The epistemic immune system should distinguish threat, novelty, contradiction, and correction. Some schema violations should trigger revision rather than defense.
 
@@ -2929,11 +2929,11 @@ contradiction load remains high because updates cannot integrate
 
 **Detection.**
 
-full architecture outputs are longer than baselines
-raters prefer style rather than structural quality
-persona prompt leaks into supposedly neutral conditions
-same memory retrieval appears in all conditions
-no ablation-specific differences appear
+- full architecture outputs are longer than baselines
+- raters prefer style rather than structural quality
+- persona prompt leaks into supposedly neutral conditions
+- same memory retrieval appears in all conditions
+- no ablation-specific differences appear
 
 **Mitigation.** Use controlled baselines, ablations, length-normalized metrics, shuffled-role controls, generic-persona controls, and memory-only comparators. Human raters should be blind to condition.
 
@@ -2945,18 +2945,18 @@ no ablation-specific differences appear
 
 **Detection.**
 
-identity stability rises while specificity falls
-contradiction rate drops through evasiveness
-self-initiation precision rises because initiation vanishes
-retrieval metrics improve while synthesis worsens
+- identity stability rises while specificity falls
+- contradiction rate drops through evasiveness
+- self-initiation precision rises because initiation vanishes
+- retrieval metrics improve while synthesis worsens
 
 **Mitigation.** Use paired metrics that punish degenerate success:
 
-identity stability + specificity retention
-settlement convergence + contradiction reduction
-self-initiation precision + useful recall
-role coherence + corrigibility
-retrieval accuracy + associative divergence
+- identity stability + specificity retention
+- settlement convergence + contradiction reduction
+- self-initiation precision + useful recall
+- role coherence + corrigibility
+- retrieval accuracy + associative divergence
 
 ### 7.22 Anthropomorphic Leakage
 
@@ -2966,17 +2966,17 @@ retrieval accuracy + associative divergence
 
 **Detection.**
 
-system claims to feel continuity
-paper language implies experience
-users treat drive variables as emotions
-TRANSMISSION is described as need rather than control signal
+- system claims to feel continuity
+- paper language implies experience
+- users treat drive variables as emotions
+- TRANSMISSION is described as need rather than control signal
 
 **Mitigation.** Maintain the boundary throughout the paper:
 
-structural continuity != phenomenal experience
-drive != human desire
-synthetic interoception != felt sensation
-role enactment != human selfhood
+- structural continuity != phenomenal experience
+- drive != human desire
+- synthetic interoception != felt sensation
+- role enactment != human selfhood
 
 The architecture may produce measurable structural properties. It does not settle the phenomenological question.
 
@@ -2988,10 +2988,10 @@ The architecture may produce measurable structural properties. It does not settl
 
 **Detection.**
 
-user ignores transmissions
-user disables self-initiation
-transmissions arrive outside useful windows
-agent repeatedly reopens low-value threads
+- user ignores transmissions
+- user disables self-initiation
+- transmissions arrive outside useful windows
+- agent repeatedly reopens low-value threads
 
 **Mitigation.** Public transmission should be rate-limited, user-configurable, and severity-aware. The default should favor private cognition and queued drafts over unsolicited messages.
 
@@ -3003,10 +3003,10 @@ agent repeatedly reopens low-value threads
 
 **Detection.**
 
-private memories activate in inappropriate contexts
-role topology binds sensitive data too broadly
-public transmission includes retrieved private details
-memory backend lacks access boundaries
+- private memories activate in inappropriate contexts
+- role topology binds sensitive data too broadly
+- public transmission includes retrieved private details
+- memory backend lacks access boundaries
 
 **Mitigation.** Memory backends should support access control, local-first operation where possible, provenance, compartmentalization, and transmission checks. Sensitive memories should not become globally activating features unless explicitly intended.
 
@@ -3016,22 +3016,22 @@ The shared risk is that coupling can fail in two opposite ways.
 
 It can be too weak:
 
-memory remains lookup
-role remains style
-state remains telemetry
-drives remain labels
-default mode remains inert
-settlement remains paraphrase
-validation remains impression
+- memory remains lookup
+- role remains style
+- state remains telemetry
+- drives remain labels
+- default mode remains inert
+- settlement remains paraphrase
+- validation remains impression
 
 Or it can be too strong:
 
-role becomes rigidity
-schema becomes confirmation bias
-default mode becomes rumination
-TRANSMISSION becomes output inflation
-interoception becomes signal gaming
-memory reconstruction becomes confabulation
+- role becomes rigidity
+- schema becomes confirmation bias
+- default mode becomes rumination
+- TRANSMISSION becomes output inflation
+- interoception becomes signal gaming
+- memory reconstruction becomes confabulation
 
 The architecture is only successful if coupling is strong enough to produce measurable continuity, but bounded enough to preserve truthfulness, corrigibility, privacy, user attention, and empirical falsifiability.
 
