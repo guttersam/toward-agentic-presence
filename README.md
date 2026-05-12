@@ -246,11 +246,11 @@ Example:
 
 ```json
 {
-  "raw": "Phosphor",
-  "canonical": "agent:phosphor",
+  "raw": "Collaborator A",
+  "canonical": "agent:collaborator_a",
   "namespace": "agent",
   "confidence": 0.94,
-  "aliases": ["Phosphor", "phosphor", "P"],
+  "aliases": ["Collaborator A", "collaborator_a", "CA"],
   "source": "aliases.yaml"
 }
 ```
@@ -611,7 +611,7 @@ Workspace record:
   ],
   "suppressed_candidates": [
     {
-      "id": "motif:laminator",
+      "id": "motif:example_motif",
       "score": 0.42,
       "reason": "low task relevance",
       "drive_state": "drive_activated_but_suppressed"
@@ -917,12 +917,12 @@ cost: -0.05
 
 ```yaml
 agents:
-  phosphor:
-    canonical: agent:phosphor
+  collaborator_a:
+    canonical: agent:collaborator_a
     aliases:
-      - Phosphor
-      - phosphor
-      - P
+      - Collaborator A
+      - collaborator_a
+      - CA
 
 projects:
   phase1:
