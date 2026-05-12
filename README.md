@@ -1108,7 +1108,7 @@ These are later-phase concerns. Phase 1 exists to determine whether the core cou
 
 ## License
 
-Code in this repository is licensed under the **Apache-2.0 License**.
+Code in this repository is licensed under the **MIT License**.
 See [LICENSE](LICENSE).
 
 The paper and documentation are licensed under **CC BY 4.0**.
