@@ -1,0 +1,25 @@
+# Workspace arbitration scoring weights
+# These are explicit starting values, not optimal values.
+# Adjust based on ablation results.
+# Sum of positive weights: 0.90
+# Sum of penalties: -0.25
+# Net range: roughly 0.0–1.0
+
+positive_weights:
+  activation_strength: 0.30
+  drive_relevance: 0.15
+  user_relevance: 0.15
+  role_relevance: 0.10
+  urgency: 0.10
+  novelty: 0.05
+  confidence: 0.05
+
+penalties:
+  risk: -0.20
+  cost: -0.05
+
+# Suppressed candidates should always be logged with:
+# - candidate id
+# - score
+# - reason
+# - drive_state at suppression time

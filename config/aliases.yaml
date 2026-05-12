@@ -1,0 +1,65 @@
+# Feature alias map for canonicalization
+# Format: namespace → entity → canonical feature + aliases
+# Add entries as new agents, projects, and motifs are introduced.
+
+agents:
+  phosphor:
+    canonical: agent:phosphor
+    aliases:
+      - Phosphor
+      - phosphor
+      - P
+  sam:
+    canonical: agent:sam
+    aliases:
+      - Sam
+      - sam
+      - S
+  adm:
+    canonical: agent:adm
+    aliases:
+      - ADM
+      - adm
+      - Astral Dream Machine
+
+projects:
+  phase1:
+    canonical: project:phase1_artifact
+    aliases:
+      - Phase 1
+      - 48-hour build
+      - artifact threshold
+      - phase 1 build
+  research_paper:
+    canonical: project:agentic_presence_paper
+    aliases:
+      - the paper
+      - toward agentic presence
+      - the architecture paper
+
+motifs:
+  transmission:
+    canonical: motif:transmission
+    aliases:
+      - signal
+      - public transmission
+      - emission
+      - transmit
+  laminator:
+    canonical: motif:laminator
+    aliases:
+      - laminator
+      - laminates
+      - the laminator
+  apple:
+    canonical: motif:golden_apple
+    aliases:
+      - golden apple
+      - the apple
+      - KALLISTI
+
+drives:
+  completion: drive:completion
+  seeking: drive:seeking
+  contact: drive:contact
+  transmission: drive:transmission

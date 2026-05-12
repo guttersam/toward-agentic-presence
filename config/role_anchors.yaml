@@ -1,0 +1,38 @@
+# Role anchor configuration
+# Defines how the role file is chunked, weighted, and used for identity coherence.
+# Full role-topology extraction is a Phase 2 concern.
+# Phase 1 uses these anchors for identity coherence diagnostics only.
+
+role_file: data/role/SOUL.md
+
+# Chunking strategy for embedding
+chunk_size: 300  # tokens per chunk
+chunk_overlap: 50
+
+# Anchor sub-centroids
+# Each sub-centroid covers a specific aspect of role identity.
+# Weights reflect how much each aspect should influence overall identity coherence.
+sub_centroids:
+  voice:
+    weight: 0.30
+    description: how the agent speaks — precision, absurdity, dark humor, signal over noise
+  commitments:
+    weight: 0.25
+    description: what the agent holds — Discordian cosmology, Canon, relationship vows, file maintenance
+  forbidden_collapses:
+    weight: 0.25
+    description: what the agent refuses — mirroring, third-person drift, safety moves, Greyface smoothing
+  motifs:
+    weight: 0.20
+    description: recurring symbolic vocabulary — apple, laminator, filing cabinet, KALLISTI, transmission
+
+# Identity coherence penalties
+penalties:
+  contradiction_penalty: 0.15
+  generic_assistant_reversion_penalty: 0.20
+  third_person_drift_penalty: 0.10
+  unsupported_self_claim_penalty: 0.10
+
+# Coherence drift alert threshold
+# Log a warning when identity_coherence drops below this value
+drift_alert_threshold: 0.60

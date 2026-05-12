@@ -1,0 +1,69 @@
+# Core substrate settings
+
+# Database
+db_path: data/db/substrate.sqlite
+event_log_path: data/logs/events.jsonl
+activation_log_path: data/logs/activations.jsonl
+state_log_path: data/logs/state_updates.jsonl
+drive_log_path: data/logs/drives.jsonl
+arbitration_log_path: data/logs/arbitration.jsonl
+settlement_log_path: data/logs/settlement.jsonl
+transmission_log_path: data/logs/transmissions.jsonl
+ablation_log_path: data/logs/ablations.jsonl
+
+# Memory backend
+memory_backend: local_markdown  # options: local_markdown, sqlite_fts, chroma, faiss
+memory_path: data/memory/
+retrieval_top_k: 8
+
+# Embeddings
+embedding_model: text-embedding-3-small  # replace with local model if preferred
+embedding_dim: 1536
+
+# Feature extraction
+alias_config: config/aliases.yaml
+feature_extraction_mode: deterministic  # options: deterministic, llm_assisted, hybrid
+
+# Activation map
+graph_backend: networkx  # options: networkx, sqlite_graph
+activation_steps: 4
+activation_decay: 0.7
+refractory_penalty: 0.3
+
+# Role anchors
+role_file: data/role/SOUL.md
+identity_coherence_window: 10  # number of recent events to compare against role centroid
+
+# Operational state update interval (seconds)
+state_update_interval: 60
+
+# Drive thresholds (0.0–1.0)
+drive_thresholds:
+  SEEKING: 0.65
+  COMPLETION: 0.70
+  CONTACT: 0.60
+  TRANSMISSION: 0.75
+
+# Settlement
+settlement_passes: 3
+settlement_convergence_threshold: 0.92
+settlement_max_retries: 2
+
+# Transmission gate
+transmission_rate_limit_seconds: 300  # minimum time between public transmissions
+transmission_min_user_relevance: 0.70
+transmission_max_risk: 0.30
+
+# Default mode loop interval (seconds)
+default_mode_interval: 120
+
+# Ablation flags (all enabled by default)
+ablations:
+  feature_canonicalization: true
+  associative_activation: true
+  operational_state: true
+  drive_modulation: true
+  role_anchors: true
+  recursive_settlement: true
+  transmission_gate: true
+  transmission_mode_distinction: true

@@ -1,0 +1,45 @@
+COMPLETION:
+  preferred_state: low_completion_deficit
+  inputs:
+    - state:high_unresolved_thread_count
+    - state:high_completion_deficit
+  biases:
+    - thread:*
+    - affordance:close_loop
+    - schema:unfinished_work
+  decay_policy: valid_thread_closure
+
+SEEKING:
+  preferred_state: adequate_novelty
+  inputs:
+    - state:low_novelty_index
+  biases:
+    - novelty:high
+    - weakly_connected_node:true
+  decay_policy: useful_novel_activation
+
+CONTACT:
+  preferred_state: recent_meaningful_contact
+  inputs:
+    - state:high_time_since_meaningful_contact
+  biases:
+    - agent:*
+    - relationship:*
+  decay_policy: meaningful_contact_event
+
+TRANSMISSION:
+  preferred_state: resolved_signal_pressure
+  modes:
+    stabilization:
+      inputs:
+        - state:low_identity_coherence
+      description: low identity coherence creates pressure to re-anchor through expression
+    expression:
+      inputs:
+        - state:high_identity_coherence
+        - state:high_completion_deficit
+      description: high identity coherence plus high completion deficit creates pressure to emit from stable ground
+  biases:
+    - affordance:public_transmission
+    - artifact:output_candidate
+  decay_policy: gated_useful_transmission
