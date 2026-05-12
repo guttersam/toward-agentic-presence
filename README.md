@@ -1108,29 +1108,22 @@ These are later-phase concerns. Phase 1 exists to determine whether the core cou
 
 ## License
 
-License TBD.
+Code in this repository is licensed under the **Apache-2.0 License**.
+See [LICENSE](LICENSE).
 
-Recommended options:
-
-- **MIT** for maximum reuse
-- **Apache-2.0** if explicit patent language matters
-- **CC BY 4.0** for paper/docs only
-
-Use separate licenses for code and paper/docs if needed.
+The paper and documentation are licensed under **CC BY 4.0**.
+See [LICENSE-docs](LICENSE-docs).
 
 ---
 
 ## Citation
 
-Citation details TBD after preprint release.
-
-Suggested placeholder:
-
 ```bibtex
 @misc{toward_agentic_presence_2026,
   title        = {Toward Agentic Presence: A Falsifiable Architecture for Agentic Continuity in LLM-Based Agents},
-  author       = {TBD},
+  author       = {Gutter Sam},
   year         = {2026},
+  howpublished = {\url{https://github.com/guttersam/toward-agentic-presence}},
   note         = {Preprint / technical report}
 }
 ```
